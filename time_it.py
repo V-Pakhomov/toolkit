@@ -31,6 +31,7 @@ def time_it_online(func):
             print(f'\r{func.__name__}() is working for {pretty_running_time}', end='')
 
             if stop():
+                print(f'\r{func.__name__}() ends with {pretty_running_time}')
                 break
 
             time.sleep(1)
